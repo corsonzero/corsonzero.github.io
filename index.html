@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html><head>
+<title>购物商城</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/startstop-slider.js"></script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="headertop_desc">
+				<div class="clear"></div>
+				<div class="account_desc">
+					<ul>
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">客户服务</a></li>
+						<li><a href="#">我的帐号</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+  </div>
+	<div class="search_box">
+		<form>
+			<input type="text" value="搜索" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '搜索';}"><input type="submit" value="">
+		</form>
+	</div>
+	<div class="clear"></div>
+	<div class="header_slide">
+			<div class="header_bottom_left">				
+				<div class="categories">
+				  <ul>
+				  	<h3>主题市场</h3>
+				      <li><a href="#">手机</a></li>
+				      <li><a href="#">电脑</a></li>
+				      <li><a href="#">生活电器</a></li>
+				      <li><a href="#">数码</a></li>
+				      <li><a href="#">玩家</a></li>
+				       <li><a href="#">零食</a></li>
+				       <li><a href="#">珠宝饰品</a></li>
+				       <li><a href="#">文具</a></li>
+				       <li><a href="#">汽车</a></li>
+				       <li><a href="#">女鞋 &amp; 男鞋</a></li>
+				       <li><a href="#">女装 &amp; 男装</a></li>
+				       <li><a href="#">手表 &amp; 眼镜</a></li>
+				  </ul>
+				</div>					
+	  	     </div>
+					 <div class="header_bottom_right">					 
+					 	 <div class="slider">					     
+							 <div id="slider">
+			                    <div id="mover" style="width: 2829px; left: 0px;">
+			                    	<div id="slide-1" class="slide">
+									 <div class="slider-img">
+									     <a href="preview.html"><img src="images/slide-1-image.png" alt="learn more" style="top: 20px;"></a>
+									  </div>
+						             	<div class="slider-text">
+		                                 <h1>安卓之光<br><span>小米10</span></h1>
+		                                 <h2>¥5268元</h2>
+									   <div class="features_list">
+									   	<h4>小米10 至尊纪念版 5G旗舰手机 陶瓷黑 8GB+256GB </h4>							               
+							            </div>
+							             <a href="preview.html" class="button">立即购买</a>
+					                   </div>			               
+									  <div class="clear"></div>				
+				                  </div>	
+						             	<div class="slide">
+						             		<div class="slider-text">
+		                                 <h1>秒杀预告<br><span>秒杀价</span></h1>
+		                                 <h2>¥2599元</h2>
+									   <div class="features_list">
+									   	<h4>LG 27英寸 UHD 4K超高清 HDR400 sRGB99% FreeSync 游戏显示器</h4>							               
+							            </div>
+							             <a href="preview.html" class="button">立即购买</a>
+					                   </div>		
+						             	 <div class="slider-img">
+									     <a href="preview.html"><img src="images/slide-3-image.jpg" alt="learn more" style="top: 20px;"></a>
+									  </div>						             					                 
+									  <div class="clear"></div>				
+				                  </div>
+				                  <div class="slide">						             	
+					                  <div class="slider-img">
+									     <a href="preview.html"><img src="images/slide-2-image.jpg" alt="learn more" style="top: 20px;"></a>
+									  </div>
+									  <div class="slider-text">
+		                                 <h1>稀缺货源<br><span>秒杀价</span></h1>
+		                                 <h2>¥25999元</h2>
+									   <div class="features_list">
+									   	<h4>技嘉AORUS RTX3090 AORUS XTREME 24G 大雕 </h4>							               
+							            </div>
+							             <a href="preview.html" class="button">立即购买</a>
+					                   </div>	
+									  <div class="clear"></div>				
+				                  </div>												
+			                 </div>		
+		                </div>
+					 <div class="clear"></div>					       
+		         </div>
+		      </div>
+		   <div class="clear"></div>
+		</div>
+   </div>
+ <div class="main">
+    <div class="content">
+    	<div class="content_top">
+    		<div class="heading">
+    		<h3>猜你喜欢</h3>
+    		</div>
+    		<div class="see">
+    			<p><a href="#">查看所有产品</a></p>
+    		</div>
+    		<div class="clear"></div>
+    	</div>
+	      <div class="section group">
+				<div class="grid_1_of_4 images_1_of_4">
+					 <a href="preview.html"><img src="images/feature-pic1.png" alt=""></a>
+					 <h2>正宗柳州地道风味螺蛳粉</h2>
+					<div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥59.90</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+					 
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview.html"><img src="images/feature-pic2.jpg" alt=""></a>
+					 <h2>实木茶几现代简约时尚小家具</h2>
+					<div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥629.00</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				    
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview.html"><img src="images/feature-pic3.jpg" alt=""></a>
+					 <h2>AMD Radeon Pro WX3100</h2>
+					 <div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥1800.00</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview.html"><img src="images/feature-pic4.jpg" alt=""></a>
+					 <h2>索尼（SONY）KD-75X80J</h2>
+					<div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥9999.00</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>				     
+				</div>
+			</div>
+			<div class="content_bottom">
+    		<div class="heading">
+    		<h3>智能先锋</h3>
+    		</div>
+    		<div class="see">
+    			<p><a href="#">查看所有产品</a></p>
+    		</div>
+    		<div class="clear"></div>
+    	</div>
+			<div class="section group">
+				<div class="grid_1_of_4 images_1_of_4">
+					 <a href="preview.html"><img src="images/new-pic1.jpg" alt=""></a>					
+					 <h2>索尼（SONY）DSC-RX100M6</h2>
+					<div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥6599.00</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview.html"><img src="images/new-pic2.jpg" alt=""></a>
+					 <h2> LG gram 2021款16英寸</h2>
+					 <div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥11990.00</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="preview.html"><img src="images/new-pic3.jpg" alt=""></a>
+					 <h2>小米全面屏电视Pro E55S</h2>
+					<div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥2999.99</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+				 <a href="preview.html"><img src="images/new-pic4.jpg" alt=""></a>
+					 <h2>MIX FOLD 小米折叠屏手机</h2>					 
+					 <div class="price-details">
+				       <div class="price-number">
+							<p><span class="rupees">¥12999.00</span></p>
+					    </div>
+					       		<div class="add-cart">								
+									<h4><a href="preview.html">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+			</div>
+    </div>
+ </div>
+</div>
+   <div class="footer">
+   	  <div class="wrap">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>购物指南</h4>
+						<ul>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">会员介绍</a></li>
+						<li><a href="#">生活旅行</a></li>
+						<li><a href="#">联系客服</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>配送方式</h4>
+						<ul>
+						<li><a href="#">上门自提</a></li>
+						<li><a href="#">211限时达</a></li>
+						<li><a href="#">配送服务查询</a></li>
+						<li><a href="#">配送费收取标准</a></li>
+						<li><a href="#">海外配送</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>售后服务</h4>
+						<ul>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">价格保护</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换货</a></li>
+							<li><a href="#">取消订单</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>友情链接</h4>
+						<ul>
+							<li><a href="#">淘宝</a></li>
+							<li><a href="#">京东</a></li>
+						</ul>
+						<div class="social-icons">
+							<h4>关注我们</h4>
+					   		  <ul>
+							      <li><a href="#" target="_blank"><img src="images/wx.png" alt=""></a></li>
+							      <li><a href="#" target="_blank"><img src="images/qq.png" alt=""></a></li>
+							      <li><a href="#" target="_blank"><img src="images/wb.png" alt=""> </a></li>
+							      <li><a href="#" target="_blank"> <img src="images/tb.png" alt=""></a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>			
+        </div>
+        <div class="copy_right">
+			<p>Copyright © 2021.叶锐俊.All rights reserved</p>
+	   </div>
+    </div>
+    <script type="text/javascript">
+		$(document).ready(function() {			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span><span id="toTopHover"> </span></a>
+<a href="#" id="toTop">To Top</a></body></html>

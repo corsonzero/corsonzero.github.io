@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html><head>
+<title>Preview</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="css/global.css">
+<script src="js/slides.js"></script>
+<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 350,
+				fadeSpeed: 500,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="headertop_desc">
+				<div class="clear"></div>
+				<div class="account_desc">
+					<ul>
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">客户服务</a></li>
+						<li><a href="#">我的帐号</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+	 <div class="clear"></div>
+  </div>
+ <div class="main">
+    <div class="content">
+    	<div class="content_top">
+    		<div class="back-links">
+    		<p><a href="index.html">主页</a> &gt;&gt;&gt;&gt; <a href="#">电子产品</a></p>
+    	    </div>
+	  		<div class="search_box">
+	     		<form>
+	     			<input type="text" value="搜索" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '搜索';}"><input type="submit" value="">
+	     		</form>
+	     	</div>
+    		<div class="clear"></div>
+    	</div>
+    	<div class="section group">
+				<div class="cont-desc span_1_of_2">
+				  <div class="product-details">				
+					<div class="grid images_3_of_2">
+						<div id="container">
+						   <div id="products_example">
+							   <div id="products">
+								<div class="slides_container" style="overflow: hidden; position: relative; display: block;">
+									<div class="slides_control" style="position: relative; width: 1098px; height: 380px; left: -366px;">
+										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0">
+											<img src="images/productslide-1.jpg?1618975656427" alt=" ">
+										</a>
+										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
+											<img src="images/productslide-2.jpg" alt=" ">
+										</a>
+										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
+											<img src="images/productslide-3.jpg" alt=" ">
+										</a>
+										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
+											<img src="images/productslide-4.jpg" alt=" ">
+										</a>
+										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
+											<img src="images/productslide-5.jpg" alt=" ">
+										</a>
+									</div>
+								</div>
+								   <a href="#" class="prev">Prev</a>
+								   <a href="#" class="next">Next</a>
+								<ul class="pagination">
+									<li class="current"><a href="#0"><img src="images/thumbnailslide-1.jpg" alt=" "></a></li>
+									<li class=""><a href="#1"><img src="images/thumbnailslide-2.jpg" alt=" "></a></li>
+									<li class=""><a href="#2"><img src="images/thumbnailslide-3.jpg" alt=" "></a></li>
+									<li><a href="#3"><img src="images/thumbnailslide-4.jpg" alt=" "></a></li>
+									<li><a href="#4"><img src="images/thumbnailslide-5.jpg" alt=" "></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="desc span_3_of_2">
+					<h2>索尼（SONY）Play Station 5高清家用游戏机 PS5体感游戏机</h2>
+					<p>全新体验！次时代高清游戏主机，最高支持8K!</p>
+					<div class="price">
+						<p>价格: <span>¥4999.00</span></p>
+					</div>
+					<div class="available">
+						<p>参数选择:</p>
+					<ul>
+						<li>颜色:
+							<select>
+							<option selected="selected">默认</option>
+							<option>黑色</option>
+							<option>灰色</option>
+							<option>红色</option>
+						</select></li>
+						<li>套餐:<select>
+							<option selected="selected">官方标配</option>
+							<option>套餐一</option>
+							<option>套餐二</option>
+							<option>套餐三</option>
+							<option>套餐四</option>
+						</select></li>
+						<li>数量:<select>
+							<option selected="selected">1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select></li>
+					</ul>
+					</div>
+				<div class="share-desc">
+					<div class="button"><span><a href="#">添加到购物车</a></span></div>					
+					<div class="clear"></div>
+				</div>
+				 <div class="wish-list">
+				 		<li>服务:<a href="#">正品保证</a>
+							<a href="#">售后保障</a>
+							<a href="#">全球品质</a>
+						</li>
+				 </div>
+			</div>
+			<div class="clear"></div>
+		  </div>
+		<div class="product_desc">	
+			<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+				<ul class="resp-tabs-list">
+					<li class="resp-tab-item resp-tab-active" aria-controls="tab_item-0" role="tab">商品详情</li>
+					<li class="resp-tab-item" aria-controls="tab_item-1" role="tab">规格与包装</li>
+					<li class="resp-tab-item" aria-controls="tab_item-2" role="tab">评价(10w+)</li>
+					<div class="clear"></div>
+				</ul>
+				<div class="resp-tabs-container"><div class="product-desc resp-tab-content resp-tab-content-active" style="display:block" aria-labelledby="tab_item-0">
+						<p>
+商品名称：索尼PS5 
+商品编号：100017153404
+品牌： 索尼（SONY）
+商品毛重：5.8kg
+商品产地：其他
+处理器：AMD
+硬盘容量：1TB
+主机类别：家庭游戏机
+使用人数：多人
+适用年龄：0-7岁，8-14岁，15-20岁，21-35岁，35以上
+适用场景：亲子互动，家庭聚会，宅男宿舍，礼品送人...</p><img src="images/slide-1.jpg" alt=""></div>
+
+				 <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>规格与包装</h2><div class="product-tags resp-tab-content" aria-labelledby="tab_item-1">
+					<span>主体</span>
+					<p>颜色：白色</p>
+					<p>型号：PS5</p>
+					<span>规格</span>
+					<p>内存：16GB GDDR6 I 256-BiT</p>
+					<p>产品净重（kg）：6.7</p>
+					<p>CPU：AMD RDNA2</p>
+					<span>包装清单</span>
+					<p>游戏机*1</p>
+			    </div>	
+
+				<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>评价</h2><div class="review resp-tab-content" aria-labelledby="tab_item-2">
+					<h4><a href="#">呀哈哈</a>的评价</h4>
+					 <ul>
+					 	<a href="#"><img src="images/quality-rating.png" alt=""></a>
+						<p>2021-01-01 11:43</p>
+					 </ul>
+					 <p>快递到来的时候包装的非常好，品质保障。海外进口，提供一年保障，用起来也比较方和放心，不用担心是蚂蚁搬家然后组装过来的。开机后有不升系统的机器人游戏，升级系统后领取赠送的20款PS4游戏，虽然很多自己已经有了，不过还是觉得诚意满满。可以运行绝大部分PS4的数字版和光盘版游戏，保障了有游戏可玩，只是目前PS5游戏数量少，并且希望会员每月会免赠送更多给力的PS5游戏，充分发挥新手柄的功效，PS4游戏也多提供一些PS5免费升级补丁，再一个希望可以让PS5游戏也可以扩展硬盘游玩。</p>
+					<a href="#"><p>回复（100）</p><a/><a href="#"><p>点赞（200）</p><a/>
+					<h4><a href="#">povs</a>的评价</h4>
+					 <ul>
+					 	<a href="#"><img src="images/quality-rating.png" alt=""></a>
+						<p>2021-01-01 12:03</p>
+					 </ul>
+					 <p>真的非常好，早买早享受。画质比ps4 pro 强，对马岛以及战神能4k 60fps，读盘速度优秀。电视是sony 自家的8500D ，屏幕刷新率满足60fps。爽到极致。</p>
+					<a href="#"><p>回复（90）</p><a/><a href="#"><p>点赞（120）</p><a/>
+					<h4><a href="#">minns</a>的评价</h4>
+					 <ul>
+					 	<a href="#"><img src="images/quality-rating.png" alt=""></a>
+						<p>2021-01-01 12:13</p>
+					 </ul>
+					 <p>先不说价格，从p1-p5,每次索尼都能给我惊喜，东西非常满意，包装还算完美，运输有点小瑕疵，算是不错了，总体来说作为索饭的我很满意，从ps4开始习惯了数字版的方便，光碟换盘太累了，游戏这东西我个人来讲属于一次性消费，不存在回血，所以买了数字版，颜值更协调，如果后期升级8k蓝光光驱可以考虑光驱版，满意！过年有新玩具了！</p>
+					<a href="#"><p>回复（82）</p><a/><a href="#"><p>点赞（105）</p><a/>
+						<a href="#"></a>
+					<div class="content-pagenation">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><span>....</span></li>
+						<li><a href="#">50</a></li>
+						<li><a href="#">下一页</a></li>
+						<div class="clear"> </div>
+					</div>	
+				</div>
+			</div>
+		 </div>
+	 </div>
+	    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+   </script>		
+   <div class="content_bottom">
+    		<div class="heading">
+    		<h3>相关产品</h3>
+    		</div>
+    		<div class="see">
+    			<p><a href="#">查看全部</a></p>
+    		</div>
+    		<div class="clear"></div>
+    	</div>
+   <div class="section group">
+				<div class="grid_1_of_4 images_1_of_4">
+					 <a href="#"><img src="images/new-pic1.jpg" alt=""></a>					
+					<div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="#">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="#"><img src="images/new-pic2.jpg" alt=""></a>
+					 <div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="#">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+					<a href="#"><img src="images/new-pic3.jpg" alt=""></a>
+					<div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="#">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+				<div class="grid_1_of_4 images_1_of_4">
+				 <img src="images/new-pic4.jpg" alt="">
+					 <div class="price" style="border:none">
+					       		<div class="add-cart" style="float:none">								
+									<h4><a href="#">添加到购物车</a></h4>
+							     </div>
+							 <div class="clear"></div>
+					</div>
+				</div>
+			</div>
+        </div>
+				<div class="rightsidebar span_3_of_1">
+					<h2>主题市场</h2>
+					<ul>
+				      <li><a href="#">手机</a></li>
+				      <li><a href="#">电脑</a></li>
+				      <li><a href="#">生活电器</a></li>
+				      <li><a href="#">数码</a></li>
+				      <li><a href="#">玩家</a></li>
+				       <li><a href="#">零食</a></li>
+				       <li><a href="#">珠宝饰品</a></li>
+				       <li><a href="#">文具</a></li>
+				       <li><a href="#">汽车</a></li>
+				       <li><a href="#">女鞋 &amp; 男鞋</a></li>
+				       <li><a href="#">女装 &amp; 男装</a></li>
+				       <li><a href="#">手表 &amp; 眼镜</a></li>
+    				</ul>
+ 				</div>
+ 		</div>
+ 	</div>
+    </div>
+ </div>
+   <div class="footer">
+   	  <div class="wrap">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>购物指南</h4>
+						<ul>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">会员介绍</a></li>
+						<li><a href="#">生活旅行</a></li>
+						<li><a href="#">联系客服</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>配送方式</h4>
+						<ul>
+						<li><a href="#">上门自提</a></li>
+						<li><a href="#">211限时达</a></li>
+						<li><a href="#">配送服务查询</a></li>
+						<li><a href="#">配送费收取标准</a></li>
+						<li><a href="#">海外配送</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>售后服务</h4>
+						<ul>
+							<li><a href="#">售后政策</a></li>
+							<li><a href="#">价格保护</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换货</a></li>
+							<li><a href="#">取消订单</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>友情链接</h4>
+						<ul>
+							<li><a href="#">淘宝</a></li>
+							<li><a href="#">京东</a></li>
+						</ul>
+						<div class="social-icons">
+							<h4>关注我们</h4>
+					   		  <ul>
+							      <li><a href="#" target="_blank"><img src="images/wx.png" alt=""></a></li>
+							      <li><a href="#" target="_blank"><img src="images/qq.png" alt=""></a></li>
+							      <li><a href="#" target="_blank"><img src="images/wb.png" alt=""> </a></li>
+							      <li><a href="#" target="_blank"> <img src="images/tb.png" alt=""></a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>			
+        </div>
+        <div class="copy_right">
+			<p>Copyright © 2021.叶锐俊.All rights reserved</p>
+	   </div>
+    </div>
+   <script type="text/javascript">
+		$(document).ready(function() {			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span><span id="toTopHover"> </span></a>
+<a href="#" id="toTop">To Top</a></body></html>
