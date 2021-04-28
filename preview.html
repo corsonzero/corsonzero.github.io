@@ -26,10 +26,47 @@
 		});
 	</script>
 </head>
-<body>
+<body οnlοad="load()">
   <div class="wrap">
 	<div class="header">
 		<div class="header_top">
+			<script>
+				$(function(){
+					var params= document.cookie;  
+					var pa = params.split("&");
+					var s = new Object();
+					for(var i = 0; i < pa.length; i ++){
+						s[pa[i].split(":")[0]] = pa[i].split(":")[1];
+					}
+					let parent = document.getElementById("headline")
+					let parent1 = document.getElementById("particulars")
+					let parent2 = document.getElementById("specification")
+					$.getJSON("data/datafile.json", function(data) {
+						var $area = $('.area');
+						var strHTML = "";
+						$area.empty();
+						$.each(data, function(infoIndex1, info1) {
+							if(infoIndex1 == s.name) {
+								$.each(info1, function(infoIndex2, info2) {
+									parent.innerHTML='<h2>'+info2.headline+'</h2><p>'+info2.content+'</p><div class="price"><p>价格: <span>¥'+info2.price+'</span></p></div>'+parent.innerHTML;
+									parent1.innerHTML='<p>'+info2.particulars+'</p><img src="images/' + s.name + '6.jpg" alt="">';
+									parent2.innerHTML=info2.specification;
+								});
+							}
+						});
+					});
+					document.getElementById("slides1").src ="images/" + s.name + "1.jpg";
+					document.getElementById("slides2").src ="images/" + s.name + "2.jpg";
+					document.getElementById("slides3").src ="images/" + s.name + "3.jpg";
+					document.getElementById("slides4").src ="images/" + s.name + "4.jpg";
+					document.getElementById("slides5").src ="images/" + s.name + "5.jpg";
+					document.getElementById("pagination1").src ="images/" + s.name + "1.jpg";
+					document.getElementById("pagination2").src ="images/" + s.name + "2.jpg";
+					document.getElementById("pagination3").src ="images/" + s.name + "3.jpg";
+					document.getElementById("pagination4").src ="images/" + s.name + "4.jpg";
+					document.getElementById("pagination5").src ="images/" + s.name + "5.jpg";
+				});
+			</script>
 			<div class="logo">
 				<a href="index.html"><img src="images/logo.png" alt=""></a>
 			</div>
@@ -99,41 +136,36 @@
 								<div class="slides_container" style="overflow: hidden; position: relative; display: block;">
 									<div class="slides_control" style="position: relative; width: 1098px; height: 380px; left: -366px;">
 										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0">
-											<img src="images/productslide-1.jpg?1618975656427" alt=" ">
+											<img src="" id="slides1" alt=" ">
 										</a>
 										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
-											<img src="images/productslide-2.jpg" alt=" ">
+											<img src="" id="slides2" alt=" ">
 										</a>
 										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
-											<img src="images/productslide-3.jpg" alt=" ">
+											<img src="" id="slides3" alt=" ">
 										</a>
 										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
-											<img src="images/productslide-4.jpg" alt=" ">
+											<img src="" id="slides4" alt=" ">
 										</a>
 										<a href="#" target="_blank" style="position: absolute; top: 0px; left: 380px; z-index: 0; display: none;">
-											<img src="images/productslide-5.jpg" alt=" ">
+											<img src="" id="slides5" alt=" ">
 										</a>
 									</div>
 								</div>
 								   <a href="#" class="prev">Prev</a>
 								   <a href="#" class="next">Next</a>
 								<ul class="pagination">
-									<li class="current"><a href="#0"><img src="images/thumbnailslide-1.jpg" alt=" "></a></li>
-									<li class=""><a href="#1"><img src="images/thumbnailslide-2.jpg" alt=" "></a></li>
-									<li class=""><a href="#2"><img src="images/thumbnailslide-3.jpg" alt=" "></a></li>
-									<li><a href="#3"><img src="images/thumbnailslide-4.jpg" alt=" "></a></li>
-									<li><a href="#4"><img src="images/thumbnailslide-5.jpg" alt=" "></a></li>
+									<li class="current"><a href="#0"><img src="" id="pagination1" alt=" "></a></li>
+									<li class=""><a href="#1"><img src="" id="pagination2" alt=" "></a></li>
+									<li class=""><a href="#2"><img src="" id="pagination3" alt=" "></a></li>
+									<li><a href="#3"><img src="" id="pagination4" alt=" "></a></li>
+									<li><a href="#4"><img src="" id="pagination5" alt=" "></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="desc span_3_of_2">
-					<h2>索尼（SONY）Play Station 5高清家用游戏机 PS5体感游戏机</h2>
-					<p>全新体验！次时代高清游戏主机，最高支持8K!</p>
-					<div class="price">
-						<p>价格: <span>¥4999.00</span></p>
-					</div>
+				<div class="desc span_3_of_2" id="headline">
 					<div class="available">
 						<p>参数选择:</p>
 					<ul>
@@ -181,32 +213,12 @@
 					<li class="resp-tab-item" aria-controls="tab_item-2" role="tab">评价(10w+)</li>
 					<div class="clear"></div>
 				</ul>
-				<div class="resp-tabs-container"><div class="product-desc resp-tab-content resp-tab-content-active" style="display:block" aria-labelledby="tab_item-0">
-						<p>
-商品名称：索尼PS5 
-商品编号：100017153404
-品牌： 索尼（SONY）
-商品毛重：5.8kg
-商品产地：其他
-处理器：AMD
-硬盘容量：1TB
-主机类别：家庭游戏机
-使用人数：多人
-适用年龄：0-7岁，8-14岁，15-20岁，21-35岁，35以上
-适用场景：亲子互动，家庭聚会，宅男宿舍，礼品送人...</p><img src="images/slide-1.jpg" alt=""></div>
+				<div class="resp-tabs-container">
+					<div class="product-desc resp-tab-content resp-tab-content-active" style="display:block" aria-labelledby="tab_item-0" id="particulars">
+						<img src="images/slide-1.jpg" alt=""></div>
 
-				 <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>规格与包装</h2><div class="product-tags resp-tab-content" aria-labelledby="tab_item-1">
-					<span>主体</span>
-					<p>颜色：白色</p>
-					<p>型号：PS5</p>
-					<span>规格</span>
-					<p>内存：16GB GDDR6 I 256-BiT</p>
-					<p>产品净重（kg）：6.7</p>
-					<p>CPU：AMD RDNA2</p>
-					<span>包装清单</span>
-					<p>游戏机*1</p>
-			    </div>	
-
+				 <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>规格与包装</h2><div class="product-tags resp-tab-content" aria-labelledby="tab_item-1" id="specification">
+			    </div>
 				<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>评价</h2><div class="review resp-tab-content" aria-labelledby="tab_item-2">
 					<h4><a href="#">呀哈哈</a>的评价</h4>
 					 <ul>
